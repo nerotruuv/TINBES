@@ -11,21 +11,36 @@ long addr[TABLE_SIZE];
 int noOfProcesses = 0;
 int idCounter = 0;
 
-int newProcess(string name, long address) {
+void fixLists(int x){
 
-  // TO DO
+  for(int i = x; i < noOfProcesses; i++){
+    id[i] = id[i+1];
+    state[i] = state[i+1];
+    addr[i] = addr[i+1];
+    processName[i] = processName[i+1];
+  }  
+}
+
+int newProcess(string name, long address) {
+  processName[noOfProcesses] = name;
+  id[noOfProcesses] = idCounter;
+  addr[noOfProcesses] = address; 
+  state[noOfProcesses] = 'p';
 
   noOfProcesses++;
   return idCounter++;
 }
 
 void removeProcess(int i) {
-  noOfProcesses--;
+  
   for (int j = i; j < noOfProcesses; j++) {
-
-    // TO DO
-
+    processName[j] = NULL;
+    id[j] = NULL;
+    addr[j] = NULL; 
+    state[j] = NULL;
   }
+  fixLists(i);
+  noOfProcesses--;
 }
 
 void executeProcesses() {
