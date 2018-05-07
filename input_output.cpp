@@ -127,62 +127,62 @@ void sendMorse(char character) {
     case ('R'||'r'):
       dot(); dash(); dot();
       break;
-	case ('S'||'s'):
-	  dot(); dot(); dot();
-	  break;
-	case ('T'||'t'):
-	  dash();
-	  break;
-	case ('U'||'u'):
-	  dot(); dot(); dash();
-	  break;
-	case ('V'||'v'):
-	  dot(); dot(); dot(); dash();
-	  break;
-	case ('W'||'w'):
-	  dot(); dash(); dash();
-	  break;
-	case ('X'||'x'):
-	  dash(); dot(); dot(); dash();
-	  break;
-	case ('Y'||'y'):
-	  dash(); dot(); dash(); dash();
-	  break;
-	case ('Z'||'z'):
-	  dash(); dash();dot(); dot();	
-	  break;
-	case '0':
-	  dash(); dash(); dash(); dash(); dash();
-	  break;
-	case '1':
-	  dot(); dash(); dash(); dash(); dash();
-	  break;
-	case '2':
-	  dot();  dot(); dash(); dash(); dash();
-	  break;
-	case '3':
-	  dot(); dot();  dot(); dash(); dash();
-	  break;
-	case '4':
-	  dot();  dot();  dot(); dot(); dash();
-	  break;
-	case '5':
-	  dot();  dot();  dot(); dot();  dot();
-	  break;
-	case '6':
-	  dash(); dot();  dot();  dot(); dot();
-	  break;
-	case '7':
-	  dash(); dash(); dot();  dot();  dot();
-	  break;
-	case '8':
-	  dash(); dash(); dash(); dot();  dot();
-	  break;
-	case '9':
-	  dash(); dash(); dash(); dash(); dot();
-	  break;
+    case ('S'||'s'):
+      dot(); dot(); dot();
+      break;
+    case ('T'||'t'):
+      dash();
+      break;
+    case ('U'||'u'):
+      dot(); dot(); dash();
+      break;
+    case ('V'||'v'):
+      dot(); dot(); dot(); dash();
+      break;
+    case ('W'||'w'):
+      dot(); dash(); dash();
+      break;
+    case ('X'||'x'):
+      dash(); dot(); dot(); dash();
+      break;
+    case ('Y'||'y'):
+      dash(); dot(); dash(); dash();
+      break;
+    case ('Z'||'z'):
+      dash(); dash();dot(); dot();	
+      break;
+    case '0':
+      dash(); dash(); dash(); dash(); dash();
+      break;
+    case '1':
+      dot(); dash(); dash(); dash(); dash();
+      break;
+    case '2':
+      dot();  dot(); dash(); dash(); dash();
+      break;
+    case '3':
+      dot(); dot();  dot(); dash(); dash();
+      break;
+    case '4':
+      dot();  dot();  dot(); dot(); dash();
+      break;
+    case '5':
+      dot();  dot();  dot(); dot();  dot();
+      break;
+    case '6':
+      dash(); dot();  dot();  dot(); dot();
+      break;
+    case '7':
+      dash(); dash(); dot();  dot();  dot();
+      break;
+    case '8':
+      dash(); dash(); dash(); dot();  dot();
+      break;
+    case '9':
+      dash(); dash(); dash(); dash(); dot();
+      break;
     default:
-	       // hier moet het niet komen		   
+          // hier moet het niet komen		   
       break;
   }
   wait(2); // wait 1 + 2 = 3 dots in total
